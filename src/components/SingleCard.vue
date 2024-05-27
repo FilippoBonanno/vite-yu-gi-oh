@@ -23,7 +23,7 @@ export default {
 
 <template>
     <div class="card">
-        
+        <img :src="select.card_images[0].image_url">
         <h2>{{ select.name }}</h2>
         <p>{{ select.type }}</p>
         
@@ -39,5 +39,9 @@ export default {
     width: 10rem;
     background-color: chocolate;
     border: 1px solid black;
+}
+
+img {
+    width: 100%;
 }
 </style>
