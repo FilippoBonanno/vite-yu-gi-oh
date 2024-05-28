@@ -4,6 +4,10 @@ const cardsDate = reactive({
 
     personaggi: [
         
+    ],
+
+    archetype: [
+        
     ]
 });
 
