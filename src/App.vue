@@ -40,7 +40,7 @@ export default {
   <label for="mosters">Choose Archetype </label>
 
   <select name="mosters">
-    <option v-for="name, i in this.store.archetype" value="volvo">{{this.store.archetype[i].archetype_name}}</option>
+    <option v-for="name, i in this.store.archetype" value="volvo">{{name.archetype_name}}</option>
   </select>
   <CardList />
 </template>
