@@ -2,6 +2,7 @@
 
 import CardList from './components/CardList.vue';
 import store from './data/store.js';
+import axios from 'axios';
 
 export default {
   
@@ -16,14 +17,21 @@ export default {
   methods: {
 
   },
-  mounted() {
+  created() {
+    axios.get("https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0").then(risultato => {
+      this.store.personaggi = risultato.data.data;
+      
+    });
 
+  },
+  mounted() {
+    
   }
 }
 </script>
 
 <template>
-  <h1>TITLE</h1>
+  <h1>Yu-Gi-Oh Api</h1>
   <CardList />
 </template>
 

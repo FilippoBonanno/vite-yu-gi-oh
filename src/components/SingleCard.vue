@@ -2,7 +2,7 @@
 export default {
     name: "SingleCard",
     props: {
-        select: String
+        select: Object
 
 
     },
@@ -43,5 +43,9 @@ export default {
 
 img {
     width: 100%;
+}
+
+p {
+    color: rgb(0, 0, 0);
 }
 </style>

@@ -26,7 +26,7 @@ export default {
 
 <template>
   <div id="cardContainer">
-    <SingleCard v-for="personaggio in store.personaggi" :select="personaggio" />
+    <SingleCard v-for="personaggio in this.store.personaggi" :select="personaggio" />
   </div>
 
 
@@ -36,5 +36,6 @@ export default {
 #cardContainer {
   display: flex;
   flex-wrap: wrap;
+  
 }
 </style>
