@@ -39,6 +39,7 @@ export default {
     width: 10rem;
     background-color: chocolate;
     border: 1px solid black;
+    font-size: 12px;
 }
 
 img {
@@ -47,5 +48,9 @@ img {
 
 p {
     color: rgb(0, 0, 0);
+}
+
+h2 {
+    width: 100%;
 }
 </style>
